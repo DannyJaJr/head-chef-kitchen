@@ -4,6 +4,7 @@
   "description": "Wesh alors :)",
   "main": "js.js",
   "scripts": {
+    "build": "webpack",
     "sass": "sass --watch ./main.scss:./style.css",
     "start": "npm run open",
     "open": "concurrently \"http-server -a localhost -p 1234\" \"open http://127.0.0.1:5500/index.html\""
@@ -20,6 +21,10 @@
   "homepage": "https://github.com/KobeKenjo/basic_project_file#readme",
   "devDependencies": {
     "concurrently": "^6.2.0",
-    "http-server": "^0.12.3"
+    "http-server": "^0.12.3",
+    "webpack-cli": "^4.7.2"
+  },
+  "dependencies": {
+    "webpack": "^5.45.1"
   }
 }

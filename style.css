@@ -11,13 +11,13 @@ a, a:visited {
 }
 
 body {
-  background: url(./media/basic-pics/mykitchen.jpeg) center/cover;
+  background: url(./media/basic-pics/kitchen2.jpeg) center/cover;
   padding: 2rem;
   min-height: 100vh;
   max-width: 1200px;
   margin: 0 auto;
 }
-h4{
+h5 {
   font-size: 4.5rem;
   /* margin: 1rem 0 2rem;
   font-weight: 100; */
