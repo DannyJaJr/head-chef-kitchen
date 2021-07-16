@@ -42,8 +42,8 @@ const searchDisplay = async() => {
             <div class="searchContainer">
                 <h2>${meal.strMeal}</h2>
                 <div class="infos">
-                    <h5>origin: ${meal.strArea}</h5>
-                    <h5>Category: ${meal.strCategory}</h5>
+                    <h4 class="colorfull">origin: ${meal.strArea}</h4>
+                    <h4 class="colorfull">Category: ${meal.strCategory}</h4>
                 </div>
                 <img src='${meal.strMealThumb}' /></br>
                 <a href="${meal.strYoutube}" target="_blank"><i class="fab fa-youtube"></i></a>
