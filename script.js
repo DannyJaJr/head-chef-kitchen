@@ -1,19 +1,10 @@
+
 const searchInput = document.getElementById('searchInput');
 const results = document.getElementById('results');
 const randomMeal = document.getElementById('randomMeal');
 
 let search ="";
 
-// const fetchSearch = async() => {
-//     meals = await fetch(
-//         // API to Lookup for meals
-//        `https://www.themealdb.com/api/json/v1/1/search.php?s=${search}`)
-//        .then(res => res.json())
-//        .then(res => res.meals)
-//        console.log(meals)
-
-    
-// }
 
 
 const fetchSearch = async(url) => {
@@ -42,12 +33,11 @@ const searchDisplay = async() => {
             <div class="searchContainer">
                 <h2>${meal.strMeal}</h2>
                 <div class="infos">
-                    <h4 class="colorfull">origin: ${meal.strArea}</h4>
-                    <h4 class="colorfull">Category: ${meal.strCategory}</h4>
+                    <h5 class="colorfull">origin: ${meal.strArea}</h5>
+                    <h5 class="colorfull">Category: ${meal.strCategory}</h5>
                 </div>
                 <img src='${meal.strMealThumb}' /></br>
                 <a href="${meal.strYoutube}" target="_blank"><i class="fab fa-youtube"></i></a>
-
             </div>
             `
 
@@ -68,25 +58,7 @@ searchInput.addEventListener('input', (e) => {
 
 // let ingredientsList = [];
 
-// for (let i = 0; i < 20; i++) {
-//   let ingredients = [`strIngredient${i}`]
-//   let arrayMeasurement = [`strMeasure${i}`]
-//   if (arrayIngredient) {
-//     ingredients.push(ingredientsList)
-//       name: arrayIngredient,
-//       measurement: arrayMeasurement
-//     })
-//   }
 
-
-// }
-
-//   //  function for ingredients and measurement
-//   const ingredientsList = async () =>{
-//       ingredients.map(index => (
-//     <li>{index.name}, {index.measurement}</li>
-//   ))
-//       }
 
 
 // ////random meal API
@@ -100,14 +72,13 @@ const randomMealDispalay = async () => {
             <div class="searchContainer">
                 <h1>${meal.strMeal}</h1>
                 <div class="infos">
-                    <h6>origin: ${meal.strArea}</h6>
-                    <h6>Category: ${meal.strCategory}</h6>
+                    <h4>origin: ${meal.strArea}</h4>
+                    <h4>Category: ${meal.strCategory}</h4>
                 </div>
                 <img src='${meal.strMealThumb}' /></br>
                 <h3>${meal.strInstructions}</h3>
                 
                 <a href="${meal.strYoutube}" target="_blank"><i class="fab fa-youtube"></i></a>
-
             </div>
             `
 
@@ -118,5 +89,3 @@ const randomMealDispalay = async () => {
 };
 randomMeal.addEventListener('click', randomMealDispalay);
 randomMealDispalay();
-
-

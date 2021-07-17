@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Josefin Sans", sans-serif;
+  font-family:  sans-serif;
 }
 
 a, a:visited {
@@ -11,7 +11,7 @@ a, a:visited {
 }
 
 body {
-  background: url(./media/basic-pics/kitchen2.jpeg) center/cover;
+  background: url(./media/basic-pics/iceCream.jpeg) center/cover;
   padding: 2rem;
   min-height: 100vh;
   max-width: 1200px;
@@ -136,5 +136,3 @@ body .randomContainer a {
     transform: scale(1);
   }
 }
-
-/*# sourceMappingURL=style.css.map */
